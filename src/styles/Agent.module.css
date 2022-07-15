@@ -1,63 +1,63 @@
-.agentCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 400px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 10px;
+.agentCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 10px;
+    margin: 10px;
 }
 
-.agentHeading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.agentHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.agentHeading h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 10px 0;
+.agentHeading h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-.agentCard img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 20px auto;
+.agentCard img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
 }
 
-.agentInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.agentInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.agentRole {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 10px 0;
-  background-color: #ff4655;
-  color: #fff;
-  padding: 4px 15px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.agentAbility {
-  display: flex;
-  margin-top: 20px;
+.agentRole{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px;
+    background-color: #ff4655;
+    color: #fff;
+    padding: 4px 15px;
+    border-radius: 10px;
 }
 
-.agentAbility p {
-  background-color: rgb(80, 80, 253);
-  color: #fff;
-  font-size: 0.7rem;
-  padding: 5px 10px;
-  border-radius: 10px;
-  margin-right: 5px;
+.agentAbility{
+    display: flex;
+    margin-top: 10px;
+}
+
+.agentAbility p{
+    background-color: blue;
+    color: #fff;
+    font-size: .8rem;
+    padding: 5px 10px;
+    margin-right: 5px;
+
 }

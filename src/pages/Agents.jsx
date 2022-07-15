@@ -1,22 +1,19 @@
-import React from 'react'
-import { useContext, useEffect } from 'react'
-import AgentList from '../components/Agents/AgentList'
-// CONTEXT
+import React, { useEffect } from 'react'
+import { useContext } from 'react'
+import AgentList from '../components/Agents/AgentList';
 import AppLevelContext from '../context/AppLevelContext'
-// COMPONENTS
 
-const Agents = () => {
-  const { fetchAgents } = useContext(AppLevelContext)
+function Agents() {
+  const {fetchAgents} = useContext(AppLevelContext);
 
   useEffect(() => {
-    fetchAgents()
-    // eslint-disable-next-line
+    fetchAgents();
   }, [])
 
   return (
-    <>
+    <div>
       <AgentList />
-    </>
+    </div>
   )
 }
 

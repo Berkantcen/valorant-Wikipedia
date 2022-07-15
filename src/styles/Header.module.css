@@ -1,57 +1,80 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 100px;
-  width: 100vw;
-  height: 70px;
-  background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    width: 100vw;
+    height: 60px;
+    background-color: #fff;
 }
 
 header .brand a {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  color: #ff4655;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: .75rem;
+    color: #ff4655;
 }
 
 header .brand img {
-  height: 50px;
-  margin-right: 20px;
+    height: 50px;
+    margin-right: 20px;
 }
 
 header nav .navList {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  color: #ff4655;
-}
-
-header nav .navList .navItem {
-  color: #ff4655;
 }
 
 header nav .navList .navItem .navLink {
-  color: #ff4655;
-  margin-right: 20px;
-  padding: 5px 10px;
-  font-size: 2rem;
-  border-radius: 10px;
+    padding-bottom: 5px;
+    padding: 5px 10px;
+    color: #ff4655;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
 }
 
 header nav .navList .navItem .activeNav {
-  background-color: #ff4655;
-  color: #fff;
-  margin-right: 20px;
-  padding: 5px 10px;
-  font-size: 2rem;
-  border-radius: 10px;
+    background-color: #ff4655;
+    color: #fff;
+    padding-bottom: 5px;
+    padding: 5px 10px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
 }
 
 header nav .navList .navItem .navLink:hover {
-  background-color: #ff4655;
-  color: #fff;
+    background-color: #ff4655;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    header{
+        padding: 0 10px;
+    }
+
+    header .brand a {
+        font-size: .5rem;
+    }
+
+    header nav .navList .navItem .navLink { 
+        margin-right: 5px;
+        font-size: 1rem;
+
+        padding: 0;
+    
+    }
+
+    header nav .navList .navItem .activeNav {
+        font-size: 1rem;
+    }
 }
